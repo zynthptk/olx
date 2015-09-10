@@ -56,12 +56,12 @@ def to_notes(chord):
 	return c_notes
 		
 def go():
-	prompt = raw_input("chord? ").lower
+	prompt = raw_input("chord? ").lower()
 	while prompt != '':
 		root = get_root(prompt)
 		chord1 = chord_int(prompt,root)
 		chord2 = to_notes(chord1)
 		print chord2
-		prompt = raw_input("chord? ").lower
+		prompt = raw_input("chord? ").lower()
 
 go()
